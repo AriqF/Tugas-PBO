@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class novelCollection {
 	String title, writer, desc;
-	int year,buyPrice, sellPrice;
+	int year, buyPrice, sellPrice;
+	
 	Scanner scan = new Scanner(System.in);
 	
 	//constructor
@@ -10,18 +11,26 @@ public class novelCollection {
 		this.writer = w;
 		this.desc = d;
 		this.buyPrice = bp;
+		this.sellPrice = 0;
 	}
 	
 	void showTitle() {
 			System.out.println("Title: " + this.title);
 	}
 	
+	void sellNov() {
+		float sell = this.buyPrice - (this.buyPrice * 20/100);
+		this.sellPrice = Math.round(sell);
+	}
+	
 	void showItemData() {
+		sellNov();
 		System.out.println("Title: " + this.title);
 		System.out.println("Writer: " + this.writer);
 		System.out.println("Descriptions: " + this.desc);
 		System.out.println("Year Out: " + this.year);
 		System.out.println("Bought Price: " + this.buyPrice);
+		System.out.println("Sell Price: " + this.sellPrice);
 	}
 	
 	
