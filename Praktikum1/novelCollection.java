@@ -68,5 +68,6 @@ public class novelCollection {
 		for(int z = 0; z < 3; z++) {
 			obj[z].showItemData();
 		}
+		scan.close();
 	}
 }
