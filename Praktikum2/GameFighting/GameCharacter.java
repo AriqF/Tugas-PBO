@@ -14,14 +14,15 @@ public class GameCharacter {
 	
 	public void hit(GameCharacter karB) {
 		karB.lifePoint -= this.attackHitPoint;
+		System.out.println(this.name + " Hit " + karB.name);
 	}
 	
 	public void kick(GameCharacter karB) {
 		karB.lifePoint -= this.attackKickPoint;
+		System.out.println(this.name + " Kick " + karB.name);
 	}
 	
 	public int getLifePoint() {
-		//System.out.println(this.name + " has " + this.lifePoint);
 		return this.lifePoint;
 	}
 	public String getName() {
