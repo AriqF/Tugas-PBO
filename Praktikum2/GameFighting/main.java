@@ -5,7 +5,7 @@ public class main {
 		GameCharacter charA = new GameCharacter("Raiden", 10, 20);
 		GameCharacter charB = new GameCharacter("SubZero", 5, 25);
 		
-		//gameStarts
+		//Game Starts
 		charA.hit(charB);
 		charB.kick(charA);
 		for(int i=0; i<3; i++) {
@@ -15,8 +15,8 @@ public class main {
 			charA.hit(charB);
 		}
 		
-		System.out.println(charA.getName() + " has " + charA.getLifePoint());
-		System.out.println(charB.getName() + " has " + charB.getLifePoint());
+		System.out.println(charA.getName() + " memiliki " + charA.getLifePoint() + " life point");
+		System.out.println(charB.getName() + " memiliki " + charB.getLifePoint() + " life point");
 		
 		if(charA.getLifePoint() > charB.getLifePoint()) {
 			System.out.println("Game dimenangkan oleh " + charA.getName());
