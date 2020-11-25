@@ -17,7 +17,7 @@ public class main {
 		System.out.println("==== List Member in Team ====");
 		//set team name
 		Tim.setNama("ABC");
-		
+		//add member to tim
 		Tim.setMember(m1);
 		Tim.setMember(m2);
 		Tim.setMember(m3);
