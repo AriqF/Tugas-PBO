@@ -2,7 +2,7 @@
 public class main {
 	
 
-	public main(String[] args) {
+	public static void main(String[] args) {
 
 		Member m1 = new Member("Fischl", 18);
 		Member m2 = new Member("Keqing", 16);
