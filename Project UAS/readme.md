@@ -1,5 +1,5 @@
 NOTE: 
-Untuk menjalankan file .exe, file exe dan folder jre (java runtime environment) harus berada dalam satu folder
+Untuk menjalankan file .exe, file exe dan folder jre (java runtime environment) harus berada dalam satu folder. Atau bisa mengcompile file JAR menggunakan launch4j untuk dijadikan file .exe
 =================================================
 Gameplay Story: 
 
